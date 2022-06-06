@@ -1,0 +1,25 @@
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    xxxl: 1920px
+) !default;
+
+:root {
+    --container-padding: 3.2rem;
+    --container-width: calc(100% - var(--container-padding));
+    --container-width-wide: var(--container-width);
+
+    @media (min-width: md) {
+        --container-side-padding: 6.4rem;
+    }
+
+    @media (min-width: xl) {
+        --container-side-padding: 0;
+        --container-width: 120rem;
+        --container-width-wide: calc(var(--container-width) + 6.4rem);
+    }
+}

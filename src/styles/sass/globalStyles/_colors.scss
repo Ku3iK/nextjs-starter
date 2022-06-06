@@ -1,0 +1,34 @@
+$colors: (
+    'main': #0070f3,
+    'white': #ffffff,
+    'black': #000000
+);
+
+@each $key, $color in $colors {
+    .has-#{$key}-color {
+        color: $color;
+    }
+}
+
+@each $key, $color in $colors {
+    .has-#{$key}-bg {
+        background-color: $color;
+    }
+}
+
+@each $key, $color in $colors {
+    .has-#{$key}-border-color {
+        border-top: $color;
+    }
+}
+
+:root {
+    @each $key, $color in $colors {
+        --color-#{$key}: #{$color};
+    }
+
+    --color-bg: #fff;
+    --color-text-main: #000;
+    --color-link: var(--color-main);
+    --color-link-hover: #000;
+}
