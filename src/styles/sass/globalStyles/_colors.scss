@@ -1,7 +1,7 @@
 $colors: (
     'main': #0070f3,
     'white': #ffffff,
-    'black': #000000
+    'black': #000000,
 );
 
 @each $key, $color in $colors {
