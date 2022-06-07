@@ -16,7 +16,7 @@ export default function Home() {
                     Welcome to <a href="https://nextjs.org">Next.js</a> starter!
                 </h1>
 
-                <p>This starter using TypeScript and Sass</p>
+                <p>This starter is using TypeScript and Sass</p>
 
                 <p>
                     Get started by editing <code>pages/index.tsx</code>
